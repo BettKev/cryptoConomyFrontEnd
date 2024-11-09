@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "784a",
+      "username": "kevmamili",
+      "useremail": "kevmamili@example.com",
+      "password": "1"
+    }
+  ],
+  "balances": [
+    {
+      "id": "1",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "amount": 0.5,
+      "usdValue": 15000
+    },
+    {
+      "id": "2",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "amount": 10,
+      "usdValue": 2000
+    }
+  ]
+}

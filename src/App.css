@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light grey text color */
+  animation: gradientAnimation 5s ease infinite; /* Apply animation */
+}
+
+/* Keyframes for background gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, #2C3E50, #34495E);
+  }
+  50% {
+    background: linear-gradient(135deg, #34495E, #1F2C35);
+  }
+  100% {
+    background: linear-gradient(135deg, #2C3E50, #34495E);
+  }
+}
+
+/* Container for both home and landing sections */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Navbar Styles */
+#nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #222; /* Darker background */
+  color: #ffffff; /* White text */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#nav h1 {
+  color: #00bcd4; /* Teal accent for logo */
+  text-shadow: 1px 1px 2px #000; /* Subtle text shadow for depth */
+}
+
+#nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#nav a:hover {
+  color: #00bcd4; /* Teal accent on hover */
+}
+
+/* Home Container Styles */
+.homeContainer {
+  background: #333; /* Dark background for contrast */
+  width: 100%;
+  height: 68vh;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+  flex: 1 1 40%;
+}
+
+.homeContainer:hover {
+  background: #444; /* Slightly lighter grey on hover */
+}
+
+/* Form Card Styles */
+.formCard {
+  border: 1px solid #999; /* Medium grey border */
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Form Styles */
+.loginForm, .signupForm {
+  text-align: center;
+}
+
+.loginForm p, .signupForm p {
+  font-size: 1.5rem;
+  color: #e0e0e0; /* Light grey for headers */
+}
+
+.loginForm input, .signupForm input {
+  width: 70%;
+  font-size: 1rem;
+  margin: 1vw 0;
+  padding: 1vw;
+  border: 1px solid #666; /* Dark grey border */
+  border-radius: 5px;
+  background-color: #444; /* Dark grey background */
+  color: #e0e0e0; /* Light text */
+}
+
+.loginForm input:hover, .signupForm input:hover {
+  background-color: #555; /* Slightly lighter grey on hover */
+}
+
+.loginForm button, .signupForm button {
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #333; /* Dark grey border */
+  padding: 0.5vw;
+  color: #ffffff;
+  background-color: #00bcd4; /* Teal accent color */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.loginForm button:hover, .signupForm button:hover {
+  background-color: #0097a7; /* Darker teal on hover */
+  transform: translateY(3px);
+}
+
+/* Landing Styles */
+.landContainer {
+  background: #444; /* Dark background for landing */
+  color: #e0e0e0; /* Light grey text */
+  border-radius: 20px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.landContainer h1 {
+  font-size: 2.5rem;
+  color: #00bcd4; /* Teal for accent */
+  margin-bottom: 10px;
+}
+
+.landContainer h2 {
+  font-size: 1.8rem;
+  color: #ccc; /* Light grey for subheading */
+  margin-bottom: 20px;
+}
+
+.landContainer h3 {
+  margin: 10px 0;
+}
+
+.landContainer ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.landContainer li {
+  background: #666; /* Medium grey for items */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.landContainer li:hover {
+  background: #555; /* Darker grey on hover */
+}
+
+.landContainer strong {
+  font-size: 1.5rem;
+  color: #00bcd4; /* Teal for highlights */
+}
+
+/* User Dashboard Styles */
+.dashboardContainer {
+    padding: 20px;
+    background: #333; /* Dark grey background */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.balanceTable {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #666; /* Dark grey border */
+    padding: 10px;
+    text-align: left;
+    color: #e0e0e0; /* Light text */
+}
+
+th {
+    background-color: #00bcd4; /* Teal header */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #444; /* Darker grey for zebra striping */
+}
+
+/* Footer Styles */
+.footContainer {
+  background: #222; /* Darker footer background */
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Loading Circle Styles */
+.loading {
+  border: 5px solid #666; /* Darker border */
+  border-top: 5px solid #00bcd4; /* Teal accent */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
